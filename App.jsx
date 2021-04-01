@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, ImageBackground } from 'react-native';
+import { StyleSheet, ImageBackground, View, Text } from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
 import StackNavigator from './navigations/StackNavigator';
@@ -16,11 +16,15 @@ import apiKeys from './config/key';
 import image from './assets/back.png'
 
 export default function App() {
-  console.disableYellowBox = true;
+  // console.disableYellowBox = true;
   const [ready, setReady] = useState(true);
 
   <View style={styles.container}>
-    <ImageBackground source={image} style={styles.image}>
+    
+    
+    
+    <ImageBackground source={image}
+     style={styles.image}>
       <Text style={styles.text}>Inside</Text>
     </ImageBackground>
   </View>

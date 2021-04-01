@@ -138,7 +138,7 @@ export default function AddPage({ navigation }) {
 
         <Item regular style={styles.title}>
           <Input
-            placeholder="일기 제목을 입력해주세요!"
+            placeholder="오늘의 건강 만족%를 입력하세요!"
             style={{ fontSize: 13 }}
             value={title}
             onChangeText={(text) => setTitle(text)}
@@ -148,14 +148,14 @@ export default function AddPage({ navigation }) {
           <Textarea
             rowSpan={8}
             bordered
-            placeholder="내용을 입력해주세요"
+            placeholder="근손실 없으셨나요?"
             style={styles.content}
             value={content}
             onChangeText={(text) => setContent(text)}
           />
         </Form>
         <Button full style={styles.uploadButton} onPress={() => upload()}>
-          <Text>오늘의 일기 작성</Text>
+          <Text>건강 일지 작성</Text>
         </Button>
       </Content>
     </Container>
@@ -220,6 +220,6 @@ const styles = StyleSheet.create({
     width: '90%',
     alignSelf: 'center',
     marginTop: 10,
-    backgroundColor: 'pink',
+    backgroundColor: '#00498c',
   },
 });

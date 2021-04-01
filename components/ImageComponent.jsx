@@ -6,6 +6,7 @@ const imageWidth = Dimensions.get('window').width / 3;
 
 export default function ImageComponent({ navigation, content }) {
   return (
+    // touchable
     <ImageBlurLoading
       withIndicator
       thumbnailSource={{ uri: content.image }}
